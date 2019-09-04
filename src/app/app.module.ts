@@ -13,6 +13,15 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { ContentComponent } from './component/content/content.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap'
+import { Routes, RouterModule } from '@angular/router';
+import { ModelsComponent } from './component/models/models.component';
+import { BrandComponent } from './component/brand/brand.component';
+import { OwnershipComponent } from './component/ownership/ownership.component';
+import { ExperienceComponent } from './component/experience/experience.component';
+import { MotorsportComponent } from './component/motorsport/motorsport.component';
+import { StoreComponent } from './component/store/store.component';
+import { HomeComponent } from './component/home/home.component';
+
 
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // import { NgbCarousel, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
@@ -22,7 +31,14 @@ import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap'
   declarations: [
     AppComponent,
     HeaderComponent,
-    ContentComponent
+    ContentComponent,
+    ModelsComponent,
+    BrandComponent,
+    OwnershipComponent,
+    ExperienceComponent,
+    MotorsportComponent,
+    StoreComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +51,9 @@ import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap'
     MatButtonToggleModule,
     NgbModule,
     NgbPaginationModule,
-    NgbAlertModule
+    NgbAlertModule,
+    Routes,
+    RouterModule
     
     
   ],
