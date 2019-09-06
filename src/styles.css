@@ -19,3 +19,7 @@
 .carousel-item>img {
   width: 100%
 }
+.slider {
+  text-align: center;
+    margin-top: 40px;
+}

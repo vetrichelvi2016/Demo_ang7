@@ -21,6 +21,8 @@ import { ExperienceComponent } from './component/experience/experience.component
 import { MotorsportComponent } from './component/motorsport/motorsport.component';
 import { StoreComponent } from './component/store/store.component';
 import { HomeComponent } from './component/home/home.component';
+import { CarouselComponent } from './component/carousel/carousel.component';
+import { CardsComponent } from './component/cards/cards.component';
 
 
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -38,7 +40,9 @@ import { HomeComponent } from './component/home/home.component';
     ExperienceComponent,
     MotorsportComponent,
     StoreComponent,
-    HomeComponent
+    HomeComponent,
+    CarouselComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,
@@ -51,8 +55,7 @@ import { HomeComponent } from './component/home/home.component';
     MatButtonToggleModule,
     NgbModule,
     NgbPaginationModule,
-    NgbAlertModule,
-    Routes,
+    NgbAlertModule, 
     RouterModule
     
     
