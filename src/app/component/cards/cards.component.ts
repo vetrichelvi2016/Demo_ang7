@@ -11,6 +11,8 @@ export class CardsComponent implements OnInit {
 
   ngOnInit() {
   }
-  
+  openModal(){
+    alert('click');
+  }
 
 }

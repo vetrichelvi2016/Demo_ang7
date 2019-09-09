@@ -23,6 +23,7 @@ import { StoreComponent } from './component/store/store.component';
 import { HomeComponent } from './component/home/home.component';
 import { CarouselComponent } from './component/carousel/carousel.component';
 import { CardsComponent } from './component/cards/cards.component';
+import { CardsServiceService } from './service/cards-service.service'
 
 
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -42,7 +43,8 @@ import { CardsComponent } from './component/cards/cards.component';
     StoreComponent,
     HomeComponent,
     CarouselComponent,
-    CardsComponent
+    CardsComponent,
+    CardsServiceService
   ],
   imports: [
     BrowserModule,
