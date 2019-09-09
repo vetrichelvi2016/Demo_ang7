@@ -36,6 +36,13 @@
         <button (click)="openModal()">openModal</button>
       </div>
     </div>
+    <div class="row well">
+      <ul *ngFor='let a of articles'>
+        <li>{{a.title}}
+  
+        </li>
+      </ul>
+    </div>
   
   </div>
   <!-- </div>

@@ -23,7 +23,9 @@ import { StoreComponent } from './component/store/store.component';
 import { HomeComponent } from './component/home/home.component';
 import { CarouselComponent } from './component/carousel/carousel.component';
 import { CardsComponent } from './component/cards/cards.component';
-import { CardsServiceService } from './service/cards-service.service'
+import { CardsServiceService } from './service/cards-service.service';
+// import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -43,8 +45,9 @@ import { CardsServiceService } from './service/cards-service.service'
     StoreComponent,
     HomeComponent,
     CarouselComponent,
-    CardsComponent,
-    CardsServiceService
+    CardsComponent
+    
+    
   ],
   imports: [
     BrowserModule,
@@ -58,7 +61,8 @@ import { CardsServiceService } from './service/cards-service.service'
     NgbModule,
     NgbPaginationModule,
     NgbAlertModule, 
-    RouterModule
+    RouterModule,    
+    HttpClientModule
     
     
   ],

@@ -1,16 +1,14 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CardsServiceService {
 
-  constructor() { }
-  getStud(){
-    return [
-      {id:101,name:'raja',mark:80},
-      {id:101,name:'mk',mark:80},
-      {id:101,name:'ks',mark:80}
-    ];
+  constructor(private _http:HttpClient) { }
+  public getNews(){
+    return this._http.get('https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=817121e23b1a4af38d3e0d92ca58548c');
   }
+ 
 }
