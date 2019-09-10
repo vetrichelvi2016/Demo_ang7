@@ -11,8 +11,8 @@ import {MatIconModule} from '@angular/material/icon';
 import { HeaderComponent } from './component/header/header.component';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { ContentComponent } from './component/content/content.component';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap'
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap'
 import { Routes, RouterModule } from '@angular/router';
 import { ModelsComponent } from './component/models/models.component';
 import { BrandComponent } from './component/brand/brand.component';
@@ -24,9 +24,11 @@ import { HomeComponent } from './component/home/home.component';
 import { CarouselComponent } from './component/carousel/carousel.component';
 import { CardsComponent } from './component/cards/cards.component';
 import { CardsServiceService } from './service/cards-service.service';
-// import { HttpClient } from '@angular/common/http';
-import { HttpClientModule } from '@angular/common/http';
 
+import { HttpClientModule } from '@angular/common/http';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { FormsModule } from '@angular/forms';
+import { AngularMaterialModule } from './angular-material/angular-material.module';
 
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // import { NgbCarousel, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
@@ -45,7 +47,8 @@ import { HttpClientModule } from '@angular/common/http';
     StoreComponent,
     HomeComponent,
     CarouselComponent,
-    CardsComponent
+    CardsComponent,
+    
     
     
   ],
@@ -62,11 +65,14 @@ import { HttpClientModule } from '@angular/common/http';
     NgbPaginationModule,
     NgbAlertModule, 
     RouterModule,    
-    HttpClientModule
+    HttpClientModule,
+    Ng2SearchPipeModule,
+    FormsModule,
+    AngularMaterialModule
     
     
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent]  
 })
 export class AppModule { }
